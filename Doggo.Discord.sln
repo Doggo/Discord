@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doggo.Discord", "src\Doggo.Discord\Doggo.Discord.csproj", "{829AB98E-E3BA-4896-A824-95C1E8E0A301}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doggo.Discord.Core", "..\Discord.Core\src\Doggo.Discord.Core\Doggo.Discord.Core.csproj", "{B9FD2D87-AD47-44DC-819E-1F50F9327E1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "external", "external", "{38A64B82-F352-45F8-8986-991708C09957}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doggo.Core", "..\Core\src\Doggo.Core\Doggo.Core.csproj", "{0F987075-94D4-4AD7-9D7A-FBC1310F3EB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doggo.Commands", "..\Commands\src\Doggo.Commands\Doggo.Commands.csproj", "{C95CCC0B-ABA0-49EA-8BBB-08EDC170C2C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{AB417D57-E806-40E8-AD4B-279AFEA111A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Github", "..\Modules.Github\src\Modules.Github\Modules.Github.csproj", "{7E7A5D37-2991-45A7-8706-D79139CE40E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{77683660-34FF-43A2-9CF5-8C1AD68A1E4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Discord.Github", "..\Modules.Discord.Github\src\Modules.Discord.Github\Modules.Discord.Github.csproj", "{50262475-136A-4154-BAB7-2F78B53F80F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{829AB98E-E3BA-4896-A824-95C1E8E0A301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829AB98E-E3BA-4896-A824-95C1E8E0A301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829AB98E-E3BA-4896-A824-95C1E8E0A301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829AB98E-E3BA-4896-A824-95C1E8E0A301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9FD2D87-AD47-44DC-819E-1F50F9327E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9FD2D87-AD47-44DC-819E-1F50F9327E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9FD2D87-AD47-44DC-819E-1F50F9327E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9FD2D87-AD47-44DC-819E-1F50F9327E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F987075-94D4-4AD7-9D7A-FBC1310F3EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F987075-94D4-4AD7-9D7A-FBC1310F3EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F987075-94D4-4AD7-9D7A-FBC1310F3EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F987075-94D4-4AD7-9D7A-FBC1310F3EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C95CCC0B-ABA0-49EA-8BBB-08EDC170C2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95CCC0B-ABA0-49EA-8BBB-08EDC170C2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95CCC0B-ABA0-49EA-8BBB-08EDC170C2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95CCC0B-ABA0-49EA-8BBB-08EDC170C2C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E7A5D37-2991-45A7-8706-D79139CE40E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E7A5D37-2991-45A7-8706-D79139CE40E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7A5D37-2991-45A7-8706-D79139CE40E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E7A5D37-2991-45A7-8706-D79139CE40E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50262475-136A-4154-BAB7-2F78B53F80F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50262475-136A-4154-BAB7-2F78B53F80F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50262475-136A-4154-BAB7-2F78B53F80F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50262475-136A-4154-BAB7-2F78B53F80F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B9FD2D87-AD47-44DC-819E-1F50F9327E1D} = {38A64B82-F352-45F8-8986-991708C09957}
+		{0F987075-94D4-4AD7-9D7A-FBC1310F3EB4} = {38A64B82-F352-45F8-8986-991708C09957}
+		{C95CCC0B-ABA0-49EA-8BBB-08EDC170C2C2} = {38A64B82-F352-45F8-8986-991708C09957}
+		{7E7A5D37-2991-45A7-8706-D79139CE40E1} = {77683660-34FF-43A2-9CF5-8C1AD68A1E4C}
+		{77683660-34FF-43A2-9CF5-8C1AD68A1E4C} = {AB417D57-E806-40E8-AD4B-279AFEA111A7}
+		{50262475-136A-4154-BAB7-2F78B53F80F7} = {77683660-34FF-43A2-9CF5-8C1AD68A1E4C}
+	EndGlobalSection
+EndGlobal
