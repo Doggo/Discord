@@ -27,7 +27,7 @@ namespace Doggo.Discord
 
         public async Task LoadModulesAsync()
         {
-            var files = Directory.EnumerateFiles(_modulePath);
+            var files = Directory.EnumerateFiles(_modulePath).Where(x => Path.GetExtension(x) == "dll");
 
             foreach (var file in files)
                 await LoadModuleAsync(file).ConfigureAwait(false);
@@ -50,8 +50,8 @@ namespace Doggo.Discord
 
         private object GetModule(Assembly assembly)
         {
-            var types = assembly.GetTypes();
-            var initializer = types.First();
+            var initializer = assembly.GetTypes().FirstOrDefault(x => x.GetTypeInfo().GetCustomAttribute(typeof(InitializerAttribute)) != null);
+
             if (initializer == null)
                 throw new InvalidOperationException($"Assembly {assembly.FullName} is not a valid Doggo module.");
             
