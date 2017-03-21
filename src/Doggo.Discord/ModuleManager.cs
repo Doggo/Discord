@@ -1,4 +1,5 @@
 ﻿using Discord.WebSocket;
+using Doggo.Commands;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -53,7 +54,7 @@ namespace Doggo.Discord
             var initializer = assembly.GetTypes().FirstOrDefault(x => x.GetTypeInfo().GetCustomAttribute(typeof(InitializerAttribute)) != null);
 
             if (initializer == null)
-                throw new InvalidOperationException($"Assembly {assembly.FullName} is not a valid Doggo module.");
+                throw new InvalidOperationException($"Assembly {assembly.FullName} does not contain a valid module initializer.");
             
             var module = Activator.CreateInstance(initializer, _client);
             _modules.TryAdd(module.GetType(), module);
@@ -63,12 +64,12 @@ namespace Doggo.Discord
         private void Initialize(object module)
         {
             var type = module.GetType().GetTypeInfo();
-            var method = type.GetMethods().FirstOrDefault(x => x.GetCustomAttribute(typeof(InitializerAttribute)) != null);
 
-            if (method == null)
-                throw new InvalidOperationException($"Module {type.FullName} does not contain a valid initializer method.");
+            var instance = module as IModule;
+            if (instance == null)
+                throw new InvalidOperationException($"Module {type.FullName} does not implement the IModule interface.");
 
-            var task = (Task)method.Invoke(module, null);
+            var task = instance.InitalizeAsync(new DependencyMap());
             task.GetAwaiter().GetResult();
         }
     }

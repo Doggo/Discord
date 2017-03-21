@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Commands\src\Doggo.Commands\Doggo.Commands.csproj" />
     <ProjectReference Include="..\..\..\Discord.Core\src\Doggo.Discord.Core\Doggo.Discord.Core.csproj" />
   </ItemGroup>
 
