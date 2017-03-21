@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Github.Discord", ".
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{06C7E164-259B-439F-AA31-F1CA2B581AF7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doggo.Rest", "..\Rest\src\Doggo.Rest\Doggo.Rest.csproj", "{DD59192E-6E34-4E4F-810E-7328782A1DD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doggo.Api.Rest", "..\Rest\src\Doggo.Api.Rest\Doggo.Api.Rest.csproj", "{DD59192E-6E34-4E4F-810E-7328782A1DD2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doggo.Api.Core", "..\Api.Core\src\Doggo.Api.Core\Doggo.Api.Core.csproj", "{B7C1FAAB-9940-474E-B1E0-F999557020FF}"
 EndProject
